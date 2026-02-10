@@ -1,0 +1,150 @@
+{
+  "project_name": "Le Gros Arbre",
+  "design_philosophy": {
+    "identity": "Modern Guinguette - A fusion of rustic French charm and contemporary elegance.",
+    "core_values": [
+      "Authenticity (Wood, Stone, Nature)",
+      "Conviviality (Warm light, shared plates)",
+      "Refinement (Elegant typography, negative space)"
+    ],
+    "vibe": "A warm, atypical tavern-canteen under a majestic cedar tree. Not a stiff fine-dining spot, but a high-end place to live and eat well."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Fraunces, serif",
+      "body": "Manrope, sans-serif",
+      "accent": "Caveat, cursive"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-light tracking-tight leading-[0.9]",
+      "h2": "text-4xl md:text-5xl font-light tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "text-sm uppercase tracking-widest font-semibold text-primary/60"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&family=Manrope:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#F9F7F2",
+      "foreground": "#1A1F1C",
+      "primary": "#2C4C3B",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#C68E5D",
+      "secondary_foreground": "#FFFFFF",
+      "muted": "#E8E6DF",
+      "muted_foreground": "#5C615E",
+      "accent": "#D4A373",
+      "border": "#E2E0D9",
+      "card": "#FFFFFF",
+      "card_foreground": "#1A1F1C"
+    },
+    "usage": {
+      "background": "bg-[#F9F7F2]",
+      "text_main": "text-[#1A1F1C]",
+      "brand_green": "bg-[#2C4C3B] text-white",
+      "brand_wood": "text-[#C68E5D]",
+      "surface_card": "bg-white border border-[#E2E0D9] shadow-sm"
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-20 md:py-32",
+      "element_gap": "gap-6 md:gap-12"
+    },
+    "grids": {
+      "bento_menu": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "tetris_about": "grid grid-cols-1 md:grid-cols-12 gap-8 items-center"
+    },
+    "border_radius": {
+      "default": "rounded-none",
+      "buttons": "rounded-full",
+      "cards": "rounded-lg"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#2C4C3B] text-white hover:bg-[#233D30] rounded-full px-8 py-6 text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl",
+      "secondary": "bg-transparent border border-[#2C4C3B] text-[#2C4C3B] hover:bg-[#2C4C3B] hover:text-white rounded-full px-8 py-6 text-lg transition-all duration-300",
+      "ghost": "text-[#1A1F1C] hover:text-[#C68E5D] underline-offset-4 hover:underline transition-colors"
+    },
+    "cards": {
+      "menu_item": "bg-white p-8 border border-border/40 hover:border-[#C68E5D]/50 transition-colors duration-300 group relative overflow-hidden",
+      "review": "bg-[#F2F0E9] p-8 rounded-2xl"
+    },
+    "navigation": {
+      "style": "fixed top-0 w-full z-50 bg-[#F9F7F2]/80 backdrop-blur-md border-b border-[#E2E0D9]",
+      "link": "font-medium text-[#1A1F1C] hover:text-[#2C4C3B] transition-colors"
+    }
+  },
+  "visual_assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1764088220884-61494bbd0513?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Outdoor terrace with warm string lights and trees at dusk - captures the 'Guinguette' vibe.",
+        "usage": "Hero section background with overlay"
+      },
+      {
+        "category": "atmosphere_interior",
+        "url": "https://images.unsplash.com/photo-1759506389269-e286d51f8932?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Rustic tables and cozy corner - represents the 'atypical' interior.",
+        "usage": "About section or Reservation background"
+      },
+      {
+        "category": "food_plating",
+        "url": "https://images.unsplash.com/photo-1725323720337-0d15df1e62b2?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Elegant gourmet plating of asparagus and bread.",
+        "usage": "Menu section highlight"
+      },
+      {
+        "category": "wine_detail",
+        "url": "https://images.unsplash.com/photo-1591703508999-b36a7f46ba83?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Wine, cheese, and bread close-up.",
+        "usage": "Menu or Footer background"
+      },
+      {
+        "category": "kitchen_vibe",
+        "url": "https://images.unsplash.com/photo-1556912102-895497aa1c7c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Stove with pots, authentic cooking vibe.",
+        "usage": "About section secondary image"
+      }
+    ],
+    "icons": "Use 'lucide-react' for UI icons (Menu, Chevron, Star, MapPin, Phone). Use thin stroke width (1.5px) for elegance."
+  },
+  "motion": {
+    "entrance": "initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} viewport={{ once: true }}",
+    "hover_lift": "whileHover={{ y: -5 }} transition={{ duration: 0.2 }}",
+    "parallax": "Use 'framer-motion' useScroll/useTransform for subtle parallax on the Hero image."
+  },
+  "accessibility": {
+    "contrast_check": "Ensure text on images has a dark overlay (bg-black/30 or bg-black/50).",
+    "focus_states": "focus:ring-2 focus:ring-[#2C4C3B] focus:ring-offset-2",
+    "semantic_html": "Use <section>, <article>, <nav>, <header>, <footer> tags properly."
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'framer-motion', 'lucide-react', 'clsx', 'tailwind-merge' if not present.",
+    "2. THEME: Update 'tailwind.config.js' with the custom colors and fonts defined above. Add the Google Fonts import to 'index.css'.",
+    "3. COMPONENTS: Create a 'Navbar' that is sticky and glassmorphic. Create a 'Footer' with the big tree concept (maybe a stylized SVG tree or just the wood color).",
+    "4. HERO: Build a full-screen hero with the 'hero_background' image. Center the title 'Le Gros Arbre' in the 'Fraunces' font. Add the Google Rating badge (4.4/5) prominently.",
+    "5. MENU: Do not use a simple list. Create a 'Bento Grid' or 'Masonry' layout for the menu categories (Entrées, Plats, Desserts). Use the food images to break up the text.",
+    "6. RESERVATION: Use Shadcn 'Dialog' or a dedicated section with a clean form. It must be the primary conversion goal.",
+    "7. MAP: Embed a styled Google Map (grayscale or muted colors) to match the site theme.",
+    "8. MOBILE: Ensure the 'Reserve' button is always accessible (sticky bottom on mobile or in the navbar)."
+  ],
+  "universal_guidelines": {
+    "do_not": [
+      "Do NOT use generic 'Inter' font for headings.",
+      "Do NOT use pure black (#000000). Use the defined charcoal (#1A1F1C).",
+      "Do NOT make the site look like a generic SaaS. It must feel like a physical place."
+    ],
+    "do": [
+      "DO use generous padding (py-24, py-32).",
+      "DO use 'text-balance' on headings for better typography.",
+      "DO add 'data-testid' to all interactive elements."
+    ]
+  }
+}
