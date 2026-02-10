@@ -43,7 +43,7 @@ const AboutSection = () => {
           >
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
+                src="https://customer-assets.emergentagent.com/job_toulousedining/artifacts/lbe90nu3_image.png"
                 alt="Cuisine du Gros Arbre"
                 className="w-full h-[500px] object-cover rounded-lg shadow-xl"
               />

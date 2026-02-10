@@ -11,13 +11,13 @@ const AccessSection = () => {
   };
 
   const hours = [
-    { day: 'Lundi', hours: 'Fermé' },
-    { day: 'Mardi', hours: '12:00 - 14:30, 19:00 - 22:00' },
-    { day: 'Mercredi', hours: '12:00 - 14:30, 19:00 - 22:00' },
-    { day: 'Jeudi', hours: '12:00 - 14:30, 19:00 - 22:00' },
-    { day: 'Vendredi', hours: '12:00 - 14:30, 19:00 - 22:30' },
-    { day: 'Samedi', hours: '12:00 - 14:30, 19:00 - 22:30' },
-    { day: 'Dimanche', hours: '12:00 - 15:00' },
+    { day: 'Lundi', hours: '12:00 - 23:30' },
+    { day: 'Mardi', hours: 'Fermé' },
+    { day: 'Mercredi', hours: 'Fermé' },
+    { day: 'Jeudi', hours: '12:00 - 23:45' },
+    { day: 'Vendredi', hours: '12:00 - 23:45' },
+    { day: 'Samedi', hours: '12:00 - 23:45' },
+    { day: 'Dimanche', hours: '12:00 - 23:45' },
   ];
 
   return (

@@ -99,9 +99,9 @@ const ReservationSection = () => {
   };
 
   const disabledDays = (day) => {
-    // Disable past dates and Mondays (restaurant closed)
+    // Disable past dates and Tuesdays/Wednesdays (restaurant closed)
     const today = startOfDay(new Date());
-    return isBefore(day, today) || day.getDay() === 1;
+    return isBefore(day, today) || day.getDay() === 2 || day.getDay() === 3;
   };
 
   if (isSuccess) {
@@ -202,7 +202,7 @@ const ReservationSection = () => {
                   />
                 </PopoverContent>
               </Popover>
-              <p className="text-xs text-muted-foreground">Fermé le lundi</p>
+              <p className="text-xs text-muted-foreground">Fermé mardi et mercredi</p>
             </div>
 
             {/* Time Selector */}

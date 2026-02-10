@@ -131,13 +131,13 @@ RESTAURANT_INFO = {
     "reviews_count": 558,
     "price_range": "30-40€",
     "hours": {
-        "monday": "Fermé",
-        "tuesday": "12:00 - 14:30, 19:00 - 22:00",
-        "wednesday": "12:00 - 14:30, 19:00 - 22:00",
-        "thursday": "12:00 - 14:30, 19:00 - 22:00",
-        "friday": "12:00 - 14:30, 19:00 - 22:30",
-        "saturday": "12:00 - 14:30, 19:00 - 22:30",
-        "sunday": "12:00 - 15:00"
+        "monday": "12:00 - 23:30",
+        "tuesday": "Fermé",
+        "wednesday": "Fermé",
+        "thursday": "12:00 - 23:45",
+        "friday": "12:00 - 23:45",
+        "saturday": "12:00 - 23:45",
+        "sunday": "12:00 - 23:45"
     },
     "coordinates": {
         "lat": 43.6114,

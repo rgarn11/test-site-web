@@ -79,10 +79,9 @@ const Footer = () => {
             <div className="flex items-start gap-3 text-white/70">
               <Clock className="w-4 h-4 mt-1 flex-shrink-0" strokeWidth={1.5} />
               <div className="text-sm space-y-1">
-                <p><span className="text-red-400">Lun:</span> Fermé</p>
-                <p><span className="text-white/90">Mar-Jeu:</span> 12h-14h30, 19h-22h</p>
-                <p><span className="text-white/90">Ven-Sam:</span> 12h-14h30, 19h-22h30</p>
-                <p><span className="text-white/90">Dim:</span> 12h-15h</p>
+                <p><span className="text-white/90">Lun:</span> 12h-23h30</p>
+                <p><span className="text-red-400">Mar-Mer:</span> Fermé</p>
+                <p><span className="text-white/90">Jeu-Dim:</span> 12h-23h45</p>
               </div>
             </div>
           </div>
