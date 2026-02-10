@@ -19,7 +19,7 @@ const HeroSection = ({ onReserveClick, onMenuClick }) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?crop=entropy&cs=srgb&fm=jpg&q=85&w=1920"
+          src="https://customer-assets.emergentagent.com/job_toulousedining/artifacts/q627qk6c_image_2026-02-10_115041498.jpg"
           alt="Le Gros Arbre restaurant terrace"
           className="w-full h-full object-cover"
         />
