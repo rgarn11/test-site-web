@@ -115,6 +115,7 @@ const Navbar = ({ onReserveClick }) => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="bg-bone w-[300px]">
+                <SheetTitle className="sr-only">Menu de navigation</SheetTitle>
                 <div className="flex flex-col gap-6 mt-8">
                   <span className="font-heading text-2xl text-cedar font-medium">
                     Le Gros Arbre
